@@ -1,11 +1,11 @@
-from flask import Flask
+from flask import Flask, render_template, redirect, url_for
 
 
-app = Flask("wass")
+app = Flask("wass", static_folder='site')
 
 @app.route("/")
 def index():
-	return "<h1>Yee mo'fucka!</h1>"
+	return redirect(url_for('static', filename="index.html"))
 
 
 if __name__ == '__main__':
