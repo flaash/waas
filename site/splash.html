@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="waasApp">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" >
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    
+
+    <title>WaaS</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="http://getbootstrap.com/dist/css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <script src="js/angular.min.js"></script>
+    <script src="js/ui-bootstrap-0.7.0.min.js"></script>
+    <script src="js/controllers.js"></script>
+
+  </head>
+  <body> 
+
+    <div class="navbar navbar-inverse" role="navigation">
+      <div class="container">
+        <div class="navbar-heade  r">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">WaaS</a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <form class="navbar-form navbar-right" role="form">
+            <div class="form-group">
+              <input type="text" placeholder="Email" class="form-control">
+            </div>
+            <div class="form-group">
+              <input type="password" placeholder="Password" class="form-control">
+            </div>
+            <button type="submit" class="btn btn-info">Sign in</button>
+          </form>
+        </div><!--/.navbar-collapse -->
+      </div>
+    </div>
+
+    <div class="container" ng-controller="WallpaperSplashController">
+      <h1>Wallpapers as a Service</h1>
+      <div class="row">
+        <div class="wallpaper-container col-md-8">
+          <div class="wallpaper" ng-repeat="wallpaper in wallpapers" style="{{getStyle(wallpaper)}}">
+            <img ng-src="{{wallpaper.source}}" alt="">
+          </div>
+        </div>
+        <div class="col-md-4">
+          <h2>Features</h2>
+          <p>Tool that demonstrates the power of Flaash
+            <br>
+            <br>
+            Based on cloud storage of wallpapers, waas has the following features
+            <ul>
+              <li ng-repeat="feature in features">{{feature.text}}</li>
+            </ul>
+        </div>
+      </div>
+      <hr>
+
+    <footer>
+      <p>© Flaash 2013</p>
+    </footer>
+    </div>
+    
+
+    
+  
+
+</body></html>
