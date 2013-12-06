@@ -2,11 +2,11 @@ var waasApp = angular.module('waasApp', []);
 
 waasApp.controller('WallpaperSplashController', function($scope, $timeout) {
     $scope.wallpapers = [{
-        'source': 'images/wallpaper1.jpg'
+        'source': 'site/images/wallpaper1.jpg'
     }, {
-        'source': 'images/wallpaper2.jpg'
+        'source': 'site/images/wallpaper2.jpg'
     }, {
-        'source': 'images/wallpaper3.jpg'
+        'source': 'site/images/wallpaper3.jpg'
     }];
 
     $scope.getStyle = function(wallpaper) {
