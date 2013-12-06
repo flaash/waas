@@ -27,6 +27,7 @@ waasApp.controller('WallpaperSplashController', function($scope, $timeout) {
     function cycle() {
         $timeout(function() {
             $scope.wallpapers.unshift($scope.wallpapers.pop());
+            console.log("Heyo");
             cycle();
         }, 5000);
     }
