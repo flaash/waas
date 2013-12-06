@@ -5,7 +5,7 @@ app = Flask("wass", static_folder='site')
 
 @app.route("/")
 def index():
-	return redirect(url_for('static', filename="index.html"))
+	return redirect(url_for('static', filename="splash.html"))
 
 
 if __name__ == '__main__':
