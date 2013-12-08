@@ -12,13 +12,13 @@
     <title>WaaS</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="http://getbootstrap.com/dist/css/bootstrap.css" rel="stylesheet">
+    <link href="site/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
     <link rel="stylesheet" href="site/css/style.css">
     
     <script src="site/js/angular.min.js"></script>
-    <script src="site/js/ui-bootstrap-0.7.0.min.js"></script>
+    <script src="site/js/bootstrap.min.js"></script>
     <script src="site/js/controllers.js"></script>
 
   </head>
@@ -49,12 +49,13 @@
       </div>
     </div>
     <div class="container">
-      <% block content %>
-      <% endblock %>
-      <hr />
-      <footer>
-        <p>© Flaash 2013</p>
-      </footer>
-    </div>
+    <% block content %>
+    <% endblock %>
+    <hr />
+    
+    <footer>
+      <p>© Flaash 2013</p>
+    </footer>
+</div>
   </body>
   </html>
