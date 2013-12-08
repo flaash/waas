@@ -16,3 +16,13 @@
 	max-width:100%;
 	max-height:100%;
 }
+
+.dashboard-sidebar{
+	width: 200px;
+
+}
+
+.dashboard-sidebar ul{
+	background-color: #dedede;
+	border-radius: 7px;
+}

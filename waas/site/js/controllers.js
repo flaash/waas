@@ -1,6 +1,6 @@
 var waasApp = angular.module('waasApp', []);
 
-waasApp.controller('WallpaperSplashController', function($scope, $timeout) {
+waasApp.controller('WallpaperSplashCtrl', function($scope, $timeout) {
     $scope.wallpapers = [{
         'source': 'site/images/wallpaper1.jpg'
     }, {
@@ -32,4 +32,14 @@ waasApp.controller('WallpaperSplashController', function($scope, $timeout) {
         }, 5000);
     }
     cycle();
+});
+
+waasApp.controller("DashboardNavbarCtrl", function($scope){
+    $scope.home = function(){
+        alert("Aww yea");
+    };
+
+    $scope.thingy = function(){
+        alert("Woooo");
+    };
 });
