@@ -7,9 +7,10 @@
 		<div class="col-md-3" ng-controller="DashboardNavbarCtrl" >
 			<div class="hidden-xs hidden-sm affix dashboard-sidebar">
 				<ul class="nav nav-pills nav-stacked">
-					<li><a ng-click="home()" href="#">Home</a></li>
-					<li><a ng-click="thingy()" href="#">Thingy</a></li>
-					<li ng-repeat="i in [1,2,3,4,5]"><a href="#">{{i}}</a></li>
+					<li><a ng-click="viewMyProfile()" href="#"><i class="fa fa-user"></i> My Profile</a></li>
+					<li><a ng-click="viewMyWallpapers()" href="#"><i class="fa fa-picture-o"></i> My Wallpapers</a></li>
+					<li><a ng-click="viewMyPlaylists()" href="#"><i class="fa fa-th"></i> My Playlists</a></li>
+					<li><a ng-click="viewBrowse()" href="#"><i class="fa fa-search"></i> Browse</a></li>
 				</ul>
 			</div>
 		</div>

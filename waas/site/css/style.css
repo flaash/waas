@@ -26,3 +26,12 @@
 	background-color: #dedede;
 	border-radius: 7px;
 }
+
+.dashboard-sidebar > ul > li{
+	padding: 0;
+}
+.dashboard-sidebar > ul > li > a{
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-left: 10px;
+}
